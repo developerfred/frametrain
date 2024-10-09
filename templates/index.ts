@@ -1,7 +1,9 @@
+import adspot from './adspot'
 import beehiiv from './beehiiv'
 import cal from './cal'
 import contract from './contract'
 import discourse from './discourse'
+import eightball from './eightball'
 import figma from './figma'
 import form from './form'
 import fundraiser from './fundraiser'
@@ -20,8 +22,9 @@ import swap from './swap'
 import twitter from './twitter'
 import hackernews from './hackernews'
 
-export default {
-    hackernews,
+
+const templates = {
+    adspot,
     pdf,
     poll,
     figma,
@@ -41,5 +44,10 @@ export default {
     gated,
     contract,
     substack,
-    beehiiv,
+    beehiiv,        
+    eightball,
+    hackernews,
 }
+
+
+export default templates
